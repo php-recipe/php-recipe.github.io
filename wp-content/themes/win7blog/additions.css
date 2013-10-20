@@ -1,0 +1,64 @@
+div#title > h1 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding-top: 0px;
+    padding-bottom: 70px;
+    text-align: left;
+}
+
+div#content > h1 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 1.8em;
+}
+
+div#content > h2 {
+    padding-top: 15px;
+    padding-bottom: 12px;
+    font-size: 1.6em;
+}
+
+img.title-transparent-img {
+    height: 142px;
+    width: 360px;
+}
+
+div.content-inline-list > ul > li {
+    display: inline;
+}
+
+div#content > ul > li {
+    margin-left: 20px;
+}
+div#content > ul > li > ul > li {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+div#content > ul > li > ul > li > ul > li {
+    margin-left: 10px;
+}
+
+div#content > p {
+    text-indent: 0.8em;
+}
+
+div#bookinfo > ul {
+    list-style-type: none;
+}
+div#bookinfo > ul > li {
+    margin: 0px;
+}
+
+div#bookinfo > p {
+    text-indent: 0px;
+}
+div#bookinfo > p.center {
+    text-align: center;
+}
+div#bookinfo:after {
+    content: "";
+    clear: both;
+    display:block;
+}
