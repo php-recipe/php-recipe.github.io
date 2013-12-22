@@ -3,7 +3,7 @@
     <head profile="http://gmpg.org/xfn/11">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-        <title>「読者の声」を追加しました &mdash; PHP逆引きレシピ 第2版 &mdash; オフィシャルサポート</title>
+        <title>［レシピ008］MAMPをインストールしたい &mdash; PHP逆引きレシピ 第2版 &mdash; オフィシャルサポート</title>
 
         <link rel="stylesheet" type="text/css" href="/wp-content/themes/win7blog/patterns/sticky-simple.css" />
         <link rel="stylesheet" type="text/css" href="/wp-content/themes/win7blog/style.css" />
@@ -40,36 +40,21 @@
 
             <div id="container">
                 <div id="content">
-                        <div>
-        <div>
-            <h2>「読者の声」を追加しました</h2>
-        </div>
-        <div>
-            <p>「読者の声」に本書の書評を追加しました。また、amazon.co.jpのカスタマーレビューも現在3件になりました。</p>
+                    <h1>［レシピ008］MAMPをインストールしたい</h1>
 
-<p>詳細は、以下のリンク先をご覧ください。</p>
+<h2>追加情報</h2>
 
-<p><a href="/voices/">読者の声</a></p>
+<h3>2013/12/22</h3>
 
-<p>また、本書の感想や書評がありましたら、是非、お知らせください。</p>
+<p>MAMP 2.2のリリースに伴い、デフォルトのPHPバージョンが5.5.3に変更され、合わせてZend OPcacheがバンドルされると共にデフォルトで有効化されています。</p>
 
-        </div>
+<p>OPcacheはオペコードをキャッシュし、実行速度を高速化するためのものでリリース環境では大変有用です。しかし、トライアンドエラーを繰り返すための開発環境で変更した内容が即時反映されないことには問題があります。設定ファイルの以下の箇所を変更し、MAMPを再起動するとOPcacheを無効化することができます。</p>
 
-        <p>
-            投稿日: 2013/11/29
-        </p>
+<p>設定ファイル：/Applications/MAMP/bin/php/php5.5.3/conf/php.ini</p>
 
-                    <p class="categories">
-            カテゴリ:
-                        <a href="/blog/categories/%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B">お知らせ</a>                        </p>
-        
-                    <div class="article">
-                <ul>
-                                            <li>次の記事: <a class="next" href="/blog/2013/12/22/recipe-008-additional-info" title="レシピ008への追加情報"><span class="title">レシピ008への追加情報</span></a></li>
-                                                                <li>前の記事: <a class="previous" href="/blog/2013/11/27/recipe-270-additional-info" title="レシピ270への追加情報"><span class="title">レシピ270への追加情報</span></a></li>
-                                    </ul>
-            </div>
-            </div>
+<p>1086行目<br />
+［変更前］ <code>zend_extension="/Applications/MAMP/bin/php/php5.5.3/lib/php/extensions/no-debug-non-zts-20121212/opcache.so"</code><br />
+［変更後］ <code>;zend_extension="/Applications/MAMP/bin/php/php5.5.3/lib/php/extensions/no-debug-non-zts-20121212/opcache.so"</code></p>
                     <div class="fixed"></div>
                     <div id="comments">
                     </div><!-- #comments -->
